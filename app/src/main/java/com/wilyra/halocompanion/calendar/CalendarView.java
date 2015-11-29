@@ -134,7 +134,7 @@ public class CalendarView extends RelativeLayout {
                         return (MainActivity) mContext;
                     }
                 });
-                addUserTask.execute(cal.getName(), selected.getLogin());
+                addUserTask.execute(cal.getId(), selected.getLogin());
             }
         });
 

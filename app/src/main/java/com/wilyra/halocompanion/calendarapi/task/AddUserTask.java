@@ -44,7 +44,7 @@ public class AddUserTask extends AsyncTask<String, Long, StatusLine> implements 
                 }
             });
         PostParam[] parameters = {
-                new PostParam("name", params[0]),
+                new PostParam("id", params[0]),
                 new PostParam("newUser", params[1])
         };
         return (CalendarApi.post(mListener.getMainActivity().getClients(), "/calendar/addUser", parameters));

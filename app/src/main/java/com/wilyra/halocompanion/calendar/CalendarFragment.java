@@ -38,9 +38,11 @@ import com.wilyra.halocompanion.calendarapi.model.Event;
 import com.wilyra.halocompanion.calendarapi.task.AllEventTask;
 import com.wilyra.halocompanion.calendarapi.task.CalendarRemoveTask;
 import com.wilyra.halocompanion.calendarapi.task.CalendarTask;
+import com.wilyra.halocompanion.calendarapi.task.EventRemoveTask;
 import com.wilyra.halocompanion.calendarapi.task.NewCalendarTask;
 import com.wilyra.halocompanion.calendarapi.task.NewEventTask;
 import com.wilyra.halocompanion.calendarapi.task.SubscribeEventTask;
+import com.wilyra.halocompanion.calendarapi.task.UnsubscribeEventTask;
 
 import org.apache.http.HttpStatus;
 import org.apache.http.StatusLine;
@@ -439,7 +441,7 @@ public class CalendarFragment extends Fragment implements IBackPressed,
             public void onClick(DialogInterface dialog, int which) {
                 CalendarRemoveTask calendarRemoveTask = new CalendarRemoveTask();
                 calendarRemoveTask.setOnTaskFinishedListener(me);
-                calendarRemoveTask.execute(c.getName());
+                calendarRemoveTask.execute(c.getId());
             }
         });
         builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -468,8 +470,37 @@ public class CalendarFragment extends Fragment implements IBackPressed,
     }
 
     @Override
-    public void onDeleteEvent(Event e) {
-        //TODO Delete Event
+    public void onDeleteEvent(final Event e) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        builder.setTitle("Remove Event");
+        builder.setMessage(String.format("Are you sure you want to remove this event (%s)", e.getName()));
+        builder.setPositiveButton("Delete", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                EventRemoveTask eventRemoveTask = new EventRemoveTask();
+                eventRemoveTask.setOnTaskFinishedListener(new EventRemoveTask.OnEventRemoveTaskFininishedListener() {
+                    @Override
+                    public void onEventRemoveTaskFininishedFinished(StatusLine resultCode) {
+                        Toast.makeText(getActivity(), "Event removed", Toast.LENGTH_SHORT).show();
+                        refreshCalendar();
+                    }
+
+                    @Override
+                    public MainActivity getMainActivity() {
+                        return (MainActivity) getActivity();
+                    }
+                });
+                eventRemoveTask.execute(e.getId());
+            }
+        });
+        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 
     @Override
@@ -559,6 +590,19 @@ public class CalendarFragment extends Fragment implements IBackPressed,
 
     @Override
     public void onUnsubscribeEvent(Event e) {
+        UnsubscribeEventTask unSubscribeEventTask = new UnsubscribeEventTask();
+        unSubscribeEventTask.setOnTaskFinishedListener(new UnsubscribeEventTask.OnUnsubscribeEventTaskFininishedListener() {
+            @Override
+            public void onUnsubscribeEventTaskFininishedFinished(StatusLine resultCode) {
+                refreshCalendar();
+            }
+
+            @Override
+            public MainActivity getMainActivity() {
+                return (MainActivity) getActivity();
+            }
+        });
+        unSubscribeEventTask.execute(e.getId());
     }
 
     @Override

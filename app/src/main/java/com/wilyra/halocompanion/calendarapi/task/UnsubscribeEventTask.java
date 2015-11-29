@@ -1,9 +1,7 @@
 package com.wilyra.halocompanion.calendarapi.task;
 
-import android.app.Fragment;
 import android.os.AsyncTask;
 
-import com.wilyra.halocompanion.MainActivity;
 import com.wilyra.halocompanion.apicommon.ApiCallback;
 import com.wilyra.halocompanion.apicommon.OnTaskFinishedListener;
 import com.wilyra.halocompanion.calendarapi.CalendarApi;
@@ -15,13 +13,13 @@ import org.apache.http.StatusLine;
 /**
  * Created by wilyr on 11/28/2015.
  */
-public class CalendarRemoveTask extends AsyncTask<String, Long, StatusLine> implements ApiCallback {
+public class UnsubscribeEventTask extends AsyncTask<String, Long, StatusLine> implements ApiCallback {
 
-    OnCalendarRemoveTaskFininishedListener mListener;
+    OnUnsubscribeEventTaskFininishedListener mListener;
 
     @Override
     public void setOnTaskFinishedListener(OnTaskFinishedListener listener) {
-        this.mListener = (OnCalendarRemoveTaskFininishedListener)listener;
+        this.mListener = (OnUnsubscribeEventTaskFininishedListener)listener;
     }
 
     @Override
@@ -46,17 +44,17 @@ public class CalendarRemoveTask extends AsyncTask<String, Long, StatusLine> impl
         PostParam[] parameters = {
                 new PostParam("id", params[0])
         };
-        return (CalendarApi.post(mListener.getMainActivity().getClients(), "/calendar/remove", parameters));
+        return (CalendarApi.post(mListener.getMainActivity().getClients(), "/calendar/unsubscribeEvent", parameters));
     }
 
     @Override
     protected void onPostExecute(StatusLine s) {
         if (mListener != null)
-            mListener.onCalendarRemoveTaskFininishedFinished(s);
+            mListener.onUnsubscribeEventTaskFininishedFinished(s);
     }
 
 
-    public interface OnCalendarRemoveTaskFininishedListener extends OnTaskFinishedListener {
-        void onCalendarRemoveTaskFininishedFinished(StatusLine resultCode);
+    public interface OnUnsubscribeEventTaskFininishedListener extends OnTaskFinishedListener {
+        void onUnsubscribeEventTaskFininishedFinished(StatusLine resultCode);
     }
 }
