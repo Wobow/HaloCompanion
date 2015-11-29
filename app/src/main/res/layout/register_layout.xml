@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwd"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/passwd" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/passwd"
+        android:layout_alignLeft="@+id/passwd"
+        android:layout_alignStart="@+id/passwd"
+        android:layout_alignRight="@+id/passwd"
+        android:layout_alignEnd="@+id/passwd"
+        android:hint="@string/login" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gamertag"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/passwd_cf"
+        android:layout_alignLeft="@+id/passwd_cf"
+        android:layout_alignStart="@+id/passwd_cf"
+        android:layout_alignRight="@+id/passwd_cf"
+        android:layout_alignEnd="@+id/passwd_cf"
+        android:hint="@string/gamertag" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signup"
+        android:id="@+id/register"
+        android:layout_below="@+id/gamertag"
+        android:layout_alignLeft="@+id/gamertag"
+        android:layout_alignStart="@+id/gamertag"
+        android:layout_alignRight="@+id/gamertag"
+        android:layout_alignEnd="@+id/gamertag" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwd_cf"
+        android:hint="@string/confirmpasswd"
+        android:layout_below="@+id/passwd"
+        android:layout_alignLeft="@+id/passwd"
+        android:layout_alignStart="@+id/passwd" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inforeg"
+        android:id="@+id/error"
+        android:layout_above="@+id/login"
+        android:layout_alignLeft="@+id/login"
+        android:layout_alignStart="@+id/login"
+        android:layout_alignRight="@+id/login"
+        android:layout_alignEnd="@+id/login"
+        android:textAlignment="center" />
+</RelativeLayout>

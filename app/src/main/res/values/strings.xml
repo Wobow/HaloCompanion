@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">Halo Companion</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Logout</string>
+
+    <string name="cache_file_key">com.wilyra.halocompanion.cachefinfile</string>
+    <string name="last_gt">lastgt</string>
+    <string name="currentLog">cureentLog</string>
+    <string name="currentPasswd">currentPasswd</string>
+
+
+    <string name="general_stats_frag">general_stats_frag</string>
+    <string name="medals_frag">medals_frag</string>
+    <string name="logincalendar_frag">logincalendar_frag</string>
+    <string name="register_frag">register_frag</string>
+
+
+    <string name="medal_type_choice">Choose category</string>
+    <string-array name="medal_type_cat_array">
+        <item>Category : All</item>
+        <item>Category : MultiKill</item>
+        <item>Category : Style</item>
+        <item>Category : Spree</item>
+        <item>Category : Objective</item>
+        <item>Category : Weapon</item>
+        <item>Category : Breakout</item>
+    </string-array>
+    <string name="sort_type_choice">Sort by</string>
+    <string-array name="sort_type_array">
+        <item>Sort by : Count</item>
+        <item>Sort by : Name</item>
+        <item>Sort by : Difficulty</item>
+    </string-array>
+
+
+    <string name="sort_type_choice_wp">Sort by</string>
+    <string-array name="sort_type_array_wp">
+        <item>Sort by : Kills</item>
+        <item>Sort by : Name</item>
+        <item>Sort by : Headshots</item>
+        <item>Sort by : Shots Fired</item>
+        <item>Sort by : Accuracy</item>
+    </string-array>
+    <string name="weapon_type_cat_array">Category</string>
+    <string-array name="weapons_type_cat_array">
+        <item>Category : All</item>
+        <item>Category : Grenade</item>
+        <item>Category : Turret</item>
+        <item>Category : Vehicle</item>
+        <item>Category : Standard</item>
+        <item>Category : Power</item>
+        <item>Category : Other</item>
+    </string-array>
+
+    <string name="medaldetail">medaldetail</string>
+
+    <!-- calendarlayout.xml -->
+    <string name="newCalendar">New</string>
+    <string name="newEvent">Add Event</string>
+    <string name="myCalendar">My Calendars</string>
+    <string name="event">Events</string>
+    <string name="eventName">Event Name</string>
+    <string name="calendar">Calendar</string>
+    <string name="date">Date</string>
+    <string name="start">Start</string>
+    <string name="end">End</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="remind">Remind Me</string>
+    <string name="delete">Delete</string>
+    <string name="participants">Participants</string>
+    <string name="gamertag">Gamertag</string>
+    <string name="all">All</string>
+    <string name="arena">Arena</string>
+    <string name="warzone">Warzone</string>
+    <string name="general">General</string>
+    <string name="winrate">Win Rate</string>
+    <string name="zero">0</string>
+    <string name="kills">Kills</string>
+    <string name="kd">K/D</string>
+    <string name="games">Games</string>
+    <string name="assists">Assists</string>
+    <string name="headshots">Head Shots</string>
+    <string name="kpg">Kills / Game</string>
+    <string name="srank">Spartan Rank</string>
+    <string name="nri">Next Rank in</string>
+    <string name="playtime">Total Playtime</string>
+    <string name="findstats">Find stats</string>
+    <string name="halologo">Halo 5 Logo</string>
+    <string name="passwd">Password</string>
+    <string name="login">Login</string>
+    <string name="signin">Sign in</string>
+    <string name="signup">Sign up</string>
+    <string name="wlcmsg">Please login to Halo Companion to access this functionnality</string>
+    <string name="name">Name</string>
+    <string name="desc">Description</string>
+    <string name="apptitle">Halo 5 Companion</string>
+    <string name="confirmpasswd">Confirm Password</string>
+    <string name="inforeg">Please enter all the following informations</string>
+    <string name="search">Search</string>
+    <string name="topmedals">Top Medals</string>
+    <string name="topweapons">Top Weapons</string>
+    <string name="destructiontool">Tool of Destruction</string>
+    <string name="zerokills">0 Kills</string>
+    <string name="vehicleofdest">Vehicle of Destruction</string>
+    <string name="seeall">See all</string>
+    <string name="tite">Title</string>
+    <string name="Home">Home</string>
+    <string name="matches">My Matches</string>
+    <string name="logorgt">Login or Gamertag</string>
+    <string name="prog"><![CDATA[Progression & Ranks]]></string>
+    <string name="database">DataBase</string>
+    <string name="medals">Medals</string>
+    <string name="weapons">Weapons</string>
+    <string name="maps">Maps</string>
+    <string name="ranks">Ranks</string>
+    <string name="appexc">App Exclusive</string>
+    <string name="stats">Stats</string>
+
+
+</resources>

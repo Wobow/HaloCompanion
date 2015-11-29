@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF9900</color>
+    <color name="colorPrimaryDark">#C67600</color>
+    <color name="colorAccent">#FFCC00</color>
+    <color name="box_title">#F1F1F1</color>
+    <color name="box_content">#999999</color>
+    <color name="titleColor">#FF9900</color>
+    <color name="titleTitleColor">#1F1F1F</color>
+    <color name="button_nav_stats_normal">#222</color>
+</resources>

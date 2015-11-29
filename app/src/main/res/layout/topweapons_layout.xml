@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/section_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/topweapons"
+        android:id="@+id/titleWeapon"
+        android:autoText="false" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/weaponContainer"
+        android:animateLayoutChanges="true" >
+
+        <RelativeLayout
+            android:layout_weight="0.50"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/relativeLayout9" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/weaponMostKillsImage"
+                android:src="@android:drawable/ic_menu_help"
+                android:layout_below="@+id/textView24"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                style="@style/section_box_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/destructiontool"
+                android:id="@+id/textView24"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                style="@style/section_box_content_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/zerokills"
+                android:id="@+id/weaponMostKills"
+                android:layout_below="@+id/weaponMostKillsImage"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="0.50"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/relativeLayout12" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/vehicleMostKillsImage"
+                android:src="@android:drawable/ic_menu_help"
+                android:layout_below="@+id/textView26"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                style="@style/section_box_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vehicleofdest"
+                android:id="@+id/textView26"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                style="@style/section_box_content_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/zerokills"
+                android:id="@+id/vehicleMostKills"
+                android:layout_below="@+id/vehicleMostKillsImage"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        style="@style/seemore_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/weapons_see_more" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/seeall"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageView5"
+            android:layout_toStartOf="@+id/imageView5" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView5"
+            android:layout_alignParentRight="true"
+            android:src="@android:drawable/ic_menu_more" />
+    </RelativeLayout>
+    <RelativeLayout
+        style="@style/seemore_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/imageView6"
+        android:layout_toStartOf="@+id/imageView6" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView6"
+        android:layout_alignParentRight="true"
+        android:src="@android:drawable/ic_menu_more" />
+</RelativeLayout>
+</LinearLayout>

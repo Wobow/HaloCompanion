@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/eventName"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/eventName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/calendar"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/eventName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignBottom="@+id/calendarSpinner"
+        android:gravity="center_vertical|end" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/calendarSpinner"
+        android:layout_below="@+id/eventName"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/date"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/calendarSpinner"
+        android:layout_toStartOf="@+id/calendarSpinner"
+        android:layout_alignBottom="@+id/dateButton"
+        android:gravity="center_vertical|end"
+        android:layout_marginRight="5dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateButton"
+        android:src="@android:drawable/ic_menu_today"
+        android:layout_below="@+id/calendarSpinner"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/date" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/date"
+        android:layout_below="@+id/calendarSpinner"
+        android:layout_toLeftOf="@+id/dateButton"
+        android:layout_toStartOf="@+id/dateButton"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_marginBottom="10dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/startButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@android:drawable/ic_menu_recent_history"
+        android:layout_alignBottom="@+id/start"
+        android:layout_below="@+id/date" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/start"
+        android:layout_alignRight="@+id/date"
+        android:layout_alignEnd="@+id/date"
+        android:layout_below="@+id/date"
+        android:layout_toLeftOf="@+id/date"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/start"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/textView4"
+        android:layout_toLeftOf="@+id/date"
+        android:layout_toStartOf="@+id/date"
+        android:layout_alignBottom="@+id/start"
+        android:gravity="center_vertical|end"
+        android:layout_marginRight="5dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/endButton"
+        android:layout_below="@+id/startButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@android:drawable/ic_menu_recent_history"
+        android:layout_alignBottom="@+id/end" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/end"
+        android:layout_below="@+id/start"
+        android:layout_alignRight="@+id/start"
+        android:layout_alignEnd="@+id/start"
+        android:layout_toRightOf="@+id/textView12"
+        android:layout_toEndOf="@+id/textView12"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/end"
+        android:id="@+id/textView14"
+        android:layout_below="@+id/start"
+        android:layout_toLeftOf="@+id/end"
+        android:layout_toStartOf="@+id/end"
+        android:layout_alignBottom="@+id/end"
+        android:gravity="center_vertical|end"
+        android:layout_marginRight="5dp" />
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/gamertag"
+            android:id="@+id/currentGt"
+            style="@style/bigtitle" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/emblemImageView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@android:drawable/ic_menu_help"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBottom="@+id/currentGt" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/refresh_button"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_cached_white_48dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignBottom="@+id/currentGt" />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loading"
+        android:layout_gravity="center_horizontal"
+        android:indeterminate="false" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/error"
+        android:layout_gravity="center_horizontal"
+        style="@style/error_title"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content"
+            android:text="@string/all"
+            android:id="@+id/displayBoth"
+            style="@style/button_nav_stats"/>
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content"
+            android:text="@string/arena"
+            android:id="@+id/displayArena"
+            style="@style/button_nav_stats" />
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content"
+            android:text="@string/warzone"
+            android:id="@+id/displayWarzone"
+            style="@style/button_nav_stats" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/content_page">
+
+    </FrameLayout>
+
+</LinearLayout>

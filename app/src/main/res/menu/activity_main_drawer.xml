@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/stats">
+        <menu>
+        <group android:checkableBehavior="single">
+            <item android:id="@+id/nav_home" android:icon="@drawable/home"
+                android:title="@string/Home" />
+            <item android:id="@+id/nav_matches" android:icon="@android:drawable/ic_menu_recent_history"
+                android:title="@string/matches" />
+            <item android:id="@+id/nav_progression" android:icon="@android:drawable/ic_menu_compass"
+                android:title="@string/prog" />
+        </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/appexc">
+        <menu>
+            <item android:id="@+id/nav_calendar" android:icon="@android:drawable/ic_menu_my_calendar"
+                android:title="@string/calendar" />
+        </menu>
+    </item>
+
+    <item android:title="@string/database">
+        <menu>
+            <item android:id="@+id/nav_database_medals" android:icon="@android:drawable/ic_menu_compass"
+                android:title="@string/medals" />
+            <item android:id="@+id/nav_database_weapons" android:icon="@android:drawable/ic_menu_compass"
+                android:title="@string/weapons" />
+            <item android:id="@+id/nav_database_maps" android:icon="@android:drawable/ic_menu_compass"
+                android:title="@string/maps" />
+            <item android:id="@+id/nav_database_ranks" android:icon="@android:drawable/ic_menu_compass"
+                android:title="@string/ranks" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rowCount="2"
+    android:columnCount="3"
+    android:alignmentMode="alignBounds"
+    android:layout_margin="5dp"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="@dimen/medalsize"
+        android:layout_height="@dimen/medalsize"
+        android:id="@+id/medalDetailimage"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_rowSpan="2"
+        android:src="@android:drawable/ic_menu_help"
+        android:layout_gravity="center"
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/name"
+        android:id="@+id/medalDetailTitle"
+        android:layout_row="0"
+        android:layout_column="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/desc"
+        android:id="@+id/medalDetailDesc"
+        android:layout_row="1"
+        android:layout_column="1" />
+</GridLayout>

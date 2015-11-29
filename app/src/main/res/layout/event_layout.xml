@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_event"
+    style="@style/event">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/date" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:weightSum="1">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/friends"
+            android:gravity="center_vertical"
+            android:layout_marginRight="10dp"/>
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:id="@+id/unsubscribe"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:layout_weight="0.17" />
+
+        <ImageView
+            android:layout_width="@dimen/eventmenuicon"
+            android:layout_height="@dimen/eventmenuicon"
+            android:id="@+id/subscribe"
+            android:src="@android:drawable/ic_menu_add"/>
+        <ImageView
+            android:layout_width="@dimen/eventmenuicon"
+            android:layout_height="@dimen/eventmenuicon"
+            android:id="@+id/details"
+            android:src="@android:drawable/ic_menu_info_details"/>
+        <ImageView
+            android:layout_width="@dimen/eventmenuicon"
+            android:layout_height="@dimen/eventmenuicon"
+            android:id="@+id/delete"
+            android:src="@android:drawable/ic_menu_delete"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:rowCount="2"
+    android:columnCount="7">
+
+    <ImageView
+        android:src="@android:drawable/ic_menu_help"
+        android:id="@+id/mapImage"
+        android:layout_width="@dimen/mapsize"
+        android:layout_height="@dimen/mapsize"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        style="@style/section_box_content"
+        android:id="@+id/killsView"
+        android:layout_gravity="fill_vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/mapImage"
+        android:layout_toEndOf="@+id/mapImage"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/section_box_content_left"
+            android:layout_gravity="fill_horizontal"
+            android:id="@+id/gameType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/section_box_title_left"
+            android:layout_gravity="fill_horizontal"
+            android:id="@+id/mapVariant"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="section_title">
+        <item name="android:background">@color/titleColor</item>
+        <item name="android:textColor">@color/titleTitleColor</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="error_title">
+        <item name="android:background">#DD0000</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">#CCCCCC</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="bigtitle">
+        <item name="android:background">#1F1F1F</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">#CCCCCC</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="section_box_title">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textColor">@color/box_title</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="section_box_title_left">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textColor">@color/box_title</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="section_box_content">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textColor">@color/titleColor</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="section_box_content_left">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textColor">@color/titleColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="section_box_content_small" parent="section_box_content">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="seemore_layout">
+        <item name="android:background">#222</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:padding">5dp</item>
+    </style>
+    <style name="button_nav_stats">
+        <item name="android:background">@drawable/button_nav_stats</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+    <style name="spinner_choice">
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:background">@color/button_nav_stats_normal</item>
+    </style>
+
+    <style name="calendarAdmin">
+        <item name="android:padding">5dp</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+    <style name="calendarList">
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@color/button_nav_stats_normal</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+    <style name="event">
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:background">@color/button_nav_stats_normal</item>
+    </style>
+</resources>
