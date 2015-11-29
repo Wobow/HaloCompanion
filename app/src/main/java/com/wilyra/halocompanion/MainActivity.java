@@ -293,7 +293,7 @@ public class MainActivity extends AppCompatActivity
                 if (fm.findFragmentByTag(tag) != null)
                     f = fm.findFragmentByTag(tag);
                 else
-                    f = CalendarFragment.newInstance();
+                    f = com.wilyra.halocompanion.calendar.LoginFragment.newInstance();
                 break;
         }
         this.currentPart = f;
